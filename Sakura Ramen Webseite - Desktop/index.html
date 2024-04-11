@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAKURA RAMEN</title>
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        .welcome-container{
+            position: absolute;
+            top: 160px;
+            left: 160px;
+            right: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'raleway', sans-serif;
+            color: white;
+        }
+        .atf-image{
+            height: 100vh;
+            width: 100%;
+            object-fit: cover;
+        }
+        .hline{
+            font-size: 96px;
+            margin-bottom: 0px;
+            font-weight: 700;
+        }
+        .hline2{
+            font-size: 24px;
+            margin-top: 0px;
+            font-weight: 400;
+        }
+
+        .sakura-image{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            position: absolute;
+            top: 20px;
+            left: 350px;
+            width: 64px;
+            height: 64px;
+            margin-top: 24px;
+        }
+
+        .menu{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            font-family: 'raleway', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            position: absolute;
+            top: 20px;
+            right: 350px;
+            margin-top: 25px;
+        }
+        .menu a{
+            text-decoration: none;
+            padding: 20px;
+            color: white;
+        }
+
+        .phone-btn{
+            border: 2px solid white;
+            border-radius: 10px;
+            background-color: #9F0908;
+            margin-left: 20px;
+            padding: 10px !important;
+            margin-top: 8px;
+        }
+        .phone-image{
+            height: 1em;
+            width: auto;
+            vertical-align: middle;
+        }
+        
+        .order{
+            color: #9F0908;
+            display: flex;
+            justify-content: center;
+            margin-top: 120px;
+            margin-bottom: 64px;
+            font-family: 'raleway', sans-serif;
+            font-size: 80px;
+            font-weight: 700;
+        }
+        .ordericons{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        .ordericons img{
+            width: 128px;
+            margin-bottom: 16px;
+        }
+        .ordertext{
+            font-family: 'Economica', sans-serif;
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 120px;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+
+        .menu-container{
+            position: relative;
+            text-align: center;
+        }
+        .background-image{
+            width: 100%;
+            height: 1552px;
+            object-fit: cover;
+        }
+        .menu-text{
+            position: absolute;
+            margin-top: 120px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: #9F0908;
+            font-family: 'raleway', sans-serif;
+            font-size: 80px;
+            font-weight: 700;
+            margin-bottom: 64px;
+        }
+
+        .bowls{
+            position: absolute;
+            top: 264px;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+
+        .tonkotsu{
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 56px;
+        }
+        .tonkotsu-image{
+            width: 352px;
+            height: 352px;
+            margin-left: 300px;
+            padding-right: 80px;
+        }
+        .tonkotsu-header{
+            font-family: 'Economica', sans-serif;
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 16px;
+        }
+        .tonkotsu-text{
+            font-family: 'raleway', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #675E54;
+            text-align: justify;
+            border-spacing: 8px;
+        }
+
+        .miso{
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 56px;
+        }
+        .miso-image{
+            width: 352px;
+            height: 352px;
+            margin-right: 300px;
+            padding-left: 80px;
+        }
+
+        .shio{
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 120px;
+        }
+        .shio-image{
+            width: 352px;
+            height: 352px;
+            margin-left: 300px;
+            padding-right: 80px;
+        }
+    </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Economica:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <img class="atf-image" src="./img/hero.jpg">
+    <img class="sakura-image" src="./img/sakura.png">
+
+    <div class="welcome-container">
+        <h1 class="hline">SAKURA RAMEN</h1>
+        <h2 class="hline2">THE BEST RAMEN IN TOWN</h2>
+    </div>
+
+    <div class="menu">
+        <a href="#">MENU</a>
+        <a href="#">LOCATIONS</a>
+        <a href="#">ABOUT</a>
+        <a class="phone-btn" href="#order">
+            <img src="./img/phone.png" class="phone-image">
+            0176 54564534
+        </a>
+    </div>
+
+    <div class="order">
+        <h>HOW TO ORDER</h>
+    </div>
+
+    <div class="ordericons"> 
+        <img class="noodle-image" src="./img/noodle.png"> 
+        <img class="broth-image" src="./img/broth.png">
+        <img class="egg-image" src="./img/egg.png">
+    </div>
+
+    <div class="ordertext">
+        <h>Pick your<br>noodle</br></h>
+        <h>Pick your<br>broth</br></h>
+        <h>Pick your<br>toppings</br></h>
+    </div>
+
+    <div class="menu-container">
+        <h1 class="menu-text">OUR MENU</h1>
+        <img class="background-image" src="./img/background.jpg">
+        <div class="bowls">
+
+            <div class="tonkotsu">
+                <img class="tonkotsu-image" src="./img/tonkotsu.png">
+
+                    <div><table>
+                        <h class="tonkotsu-header">Tonkotsu Ramen:</h>
+                            <tr>
+                            <td class="tonkotsu-text">CHICKEN</td>
+                            <td class="tonkotsu-text">11,95€</td>
+                            </tr>
+                            <td class="tonkotsu-text">BEEF</td>
+                            <td class="tonkotsu-text">12,95€</td>
+                            </tr>
+                            <td class="tonkotsu-text">SHRIMP</td>
+                            <td class="tonkotsu-text">13,95€</td>
+                            </tr>
+                    </table></div>
+                    
+            </div>
+            <div class="miso">
+
+                    <div><table>
+                        <h class="tonkotsu-header">Spicy Miso Ramen:</h>
+                            <tr>
+                            <td class="tonkotsu-text">CHICKEN</td>
+                            <td class="tonkotsu-text">11,95€</td>
+                            </tr>
+                            <td class="tonkotsu-text">BEEF</td>
+                            <td class="tonkotsu-text">12,95€</td>
+                            </tr>
+                            <td class="tonkotsu-text">SHRIMP</td>
+                            <td class="tonkotsu-text">13,95€</td>
+                            </tr>
+                    </table></div>
+                <img class="miso-image" src="./img/miso.png">
+
+            </div>
+            <div class="shio">
+                <img class="shio-image" src="./img/shio.png">
+
+                    <div><table>
+                        <h class="tonkotsu-header">Shio Ramen:</h>
+                            <tr>
+                            <td class="tonkotsu-text">CHICKEN</td>
+                            <td class="tonkotsu-text">11,95€</td>
+                            </tr>
+                            <td class="tonkotsu-text">BEEF</td>
+                            <td class="tonkotsu-text">12,95€</td>
+                            </tr>
+                            <td class="tonkotsu-text">SHRIMP</td>
+                            <td class="tonkotsu-text">13,95€</td>
+                            </tr>
+                    </table></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
